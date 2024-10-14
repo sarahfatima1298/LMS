@@ -46,6 +46,10 @@ public class Librarian extends User implements UserManager {
 		patron.returnBook(book);
 	}
 
+	public Author addAuthor(String name, String email, String bio) {
+		return (new Author(name, email, bio));
+	}
+
 	@Override
 	public Patron addPatron(String name, String userId, String email) {
 		return (new Patron(name, userId, email));

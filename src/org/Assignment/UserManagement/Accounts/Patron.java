@@ -11,7 +11,7 @@ public class Patron extends User {
 	private List<Book> borrowedBooks = new ArrayList<>();
 	private List<Book> borrowingHistory = new ArrayList<>();
 
-	public Patron(String name, String memberId, String email) {
+	Patron(String name, String memberId, String email) {
 		super(name, email);
 		this.patronId = memberId;
 	}

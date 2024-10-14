@@ -3,7 +3,7 @@ package org.Assignment.UserManagement.Accounts;
 public class Author extends User {
 	private String bio;
 
-	public Author(String name, String email, String bio) {
+	Author(String name, String email, String bio) {
 		super(name, email);
 		this.bio = bio;
 	}

@@ -31,6 +31,11 @@ public class LibraryInventory {
 		bookList.remove(bookInstance);
 	}
 
+	public void removeBook(String bookId) {
+		BookInstance bookInstance = getBookInstance(bookId);
+		bookList.remove(bookInstance);
+	}
+
 	public void updateBookStatus(BookInstance bookInstance, BookStatus newStatus) {
 		bookInstance.setBookStatus(newStatus);
 	}
